@@ -43,7 +43,7 @@ func main() {
 	resp, err = requests.NewRequest("POST", "https://jsonplaceholder.typicode.com/posts").
 		JSON(data).
 		Execute()
-        
+
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
@@ -54,6 +54,3 @@ func main() {
 }
 
 ```
-
-Examples
-Making a GET Request
